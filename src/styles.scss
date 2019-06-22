@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+p{
+  margin: 0 0 1em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  &__header {
+    padding: 30px 0;
+  }
+  &__title {
+    color: #222;
+  }
+  &__subtitle {
+    margin: 0;
+  }
+  &__main {
+    flex: 1 1 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 30px 0;
+  }
+  &__bio{
+    font-size: 16px;
+  }
+  &__heading{
+    margin-top: 30px;
+  }
+  &__footer {
+    padding: 30px 0;
+  }
+}
